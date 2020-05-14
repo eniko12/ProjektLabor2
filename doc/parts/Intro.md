@@ -1,0 +1,3 @@
+## Introduction
+
+Our team is a small but ambitious web developer team that aims to achieve the highest heights. The team consists of five trustworthy, young developers, who are eagerly helping out each other and solve problems together. Our main profile is highly dynamic, database-driven websites, especially webshops. We mainly use the Laravel framework, however, we are flexible with our technologies.

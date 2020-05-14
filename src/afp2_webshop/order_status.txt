@@ -1,0 +1,7 @@
+0 - kosár
+1 - leadott rendelés
+2 - folyamatban
+3 - lezárt
+4 - kívánság lista
+-1 - visszavont
+-2 - elutasított

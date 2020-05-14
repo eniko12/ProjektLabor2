@@ -1,0 +1,64 @@
+HomeController:
+   	/ -> show home page
+
+AboutController:
+	/about -> show AboutUs page
+
+ContactController: (???)
+    /contact -> show Contact page  (???)
+
+BookController:
+   	/shop -> show shop page with all books
+   	/shop/00 -> show single book with id 00 (item page)
+   	/shop/add -> add book to database (admin)
+   	/shop/remove/00 -> remove book with id 00 from database (admin)
+   	/shop/edit/00 -> edit book with id 00 in database (admin)
+
+CartController:
+	/cart -> show cart page with items in active-user`s cart
+	/cart/00 -> show cart of user with id 00 (admin)
+	/cart/add/00 -> add book with id 00 to user cart
+	/cart/add/success -> show succes page for adding
+	/cart/remove/00 -> remove book with id 00 from active-user`s cart
+	/cart/remove/success -> show succes page for adding
+	/cart/edit -> edit active-user`s cart
+	/cart/edit/success -> show succes page for adding
+
+AuthorController:
+	/author -> get all authors # return json_encode($content);
+	/author/add -> add author to database (admin)
+	/author/remove/00 -> remove author with id 00 from database (admin)
+	/author/edit/00 -> edit author with id 00 in database (admin)
+
+PublisherController:
+	/publisher -> get all publisher # return json_encode($content);
+	/publisher/add -> add publisher to database (admin)
+	/publisher/remove/00 -> remove publisher with id 00 from database (admin)
+	/publisher/edit/00 -> edit publisher with id 00 in database (admin)
+
+GenreController:
+	/genre -> get all genre # return json_encode($content);
+	/genre/add -> add genre to database (admin)
+	/genre/remove/00 -> remove genre with id 00 from database (admin)
+	/genre/edit/00 -> edit genre with id 00 in database (admin)
+
+OrderController:
+	/order -> show order page with all orders made by active-user
+	/order/00 -> show single order with id 00 (single order page) (!)
+	/order/placeorder/00 -> here you can fill out the information forms (name, tel, email, address, etc.)
+	/order/confirm/00 -> ask for confirmation before continue
+	/order/add/00 -> add order to database
+	/order/remove/00 -> remove book with id 00 from database (admin)
+	/order/edit/00 -> edit book with id 00 in database (admin)
+
+ProfileController:
+	/profile -> show active-user`s profile (self)
+	/profile -> show all user profile (admin)
+	/profile/00 -> show user profile with id 00 (admin)
+        # Note: if not admin, "	/profile" route will redirect to "	/profile/00" where 00 is the id of the active-user
+	/profile/edit -> edit user profile (self)
+	/profile/edit/00 -> edit user profile (admin)
+	/profile/login -> log the user in
+	/profile/register -> register new user
+	/profile/remove -> delete user profile (self)
+	/profile/remove/00 -> delete user profile (admin)
